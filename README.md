@@ -331,7 +331,34 @@ URL: http://localhost:8080/api/users/bookings/1/5
 
  * Logger middleware logs each request method and path after processing.
 
+FOLDER STRUCTURE
 
+APPOINTMENTAPI
+├── internal                           # All core application logic
+│   ├── controller                     # Route handlers / API controllers
+│   │   └── controller.go
+│   ├── db                             # Database connection & setup
+│   │   └── db.go
+│   ├── errors                         # Custom error types & responses
+│   │   └── errors.go
+│   ├── middleware                     # Middlewares (logger, error handler)
+│   │   ├── errorhandler.go
+│   │   └── logger.go
+│   ├── models                         # Data models / structs
+│   │   └── models.go
+│   ├── repo                           # Repository interfaces & implementations
+│   │   ├── repo.go
+│   │   └── repo_impl.go
+│   ├── service                        # Business logic layer
+│   │   └── service.go
+│   └── utils                          # Utility/helper functions
+│       └── utils.go
+│
+├── APIDOCS.md                         # API endpoint documentation
+├── go.mod                             # Go module definition
+├── go.sum                             # Dependency checksum file
+├── main.go                            # Entry point of the application
+└── README.md                          # Project documentation
 
 
 
