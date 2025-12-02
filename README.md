@@ -332,7 +332,7 @@ URL: http://localhost:8080/api/users/bookings/1/5
  * Logger middleware logs each request method and path after processing.
 
 FOLDER STRUCTURE
-
+```
 APPOINTMENTAPI
 ├── internal                           # All core application logic
 │   ├── controller                     # Route handlers / API controllers
@@ -359,6 +359,6 @@ APPOINTMENTAPI
 ├── go.sum                             # Dependency checksum file
 ├── main.go                            # Entry point of the application
 └── README.md                          # Project documentation
-
+```
 
 
